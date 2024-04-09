@@ -76,6 +76,7 @@ const Main =()=> {
                 </div>
               </div>
               <img className={style.smartkapi} src={require("./img/smartkapi.png")} alt="smartkapibara" />
+              <img className={style.smartkapimob} src={require("./img/mob/smartkapimob.png")} alt="smartkapibara" />
             </div>
 
           </section>
@@ -85,6 +86,7 @@ const Main =()=> {
           <section className={`${style.gradient} ${style.flex}`}>
             <div className={style.labinfo}>
               <h2 id="lab" className={style.labheading}>Лаборатория</h2>
+              <img className={style.himkapimob} src={require("./img/himkapi.png")} alt="" />
               <div>
                 <p className={style.labtextone}>Наша лаборатория предлагает широкий спектр медицинских исследований, проводимых 
                   опытными капибарами-лаборантами. Мы специализируемся на анализе биоматериалов, 
@@ -98,8 +100,8 @@ const Main =()=> {
           <section className={style.gal}>
             <span id="gallery" className={style.galtext}>Галерея</span>
             <section className={style.galphot}>
-              <div className={style.flex}>
-                <div className={style.flex}>
+              <div className={`${style.block} ${style.flex}`}>
+                <div className={`${style.block} ${style.flex}`}>
                   <img className={style.gal1} src={require('./img/gal/gal1.png')} alt="" />
                 </div>
                 <div>
@@ -122,7 +124,7 @@ const Main =()=> {
               <span className={style.formhead}>Заявка на диагностику</span>
               <p className={style.forminfo}>Доверьте свои медицинские исследования надежным капибарам-лаборантам и получите качественные результаты в кратчайшие сроки!</p>
               <form className={style.formbox} onSubmit={handleSubmit}>
-                <div className={style.flex}>
+                <div className={`${style.flex} ${style.block}`}>
                   <label>
                     <input className={style.forminput} type="lastName" name="lastName" value={formData.lastName} onChange={handleChange} placeholder="Фамилия"/>
                   </label>
@@ -144,8 +146,8 @@ const Main =()=> {
           </section>
         </main>
         <footer className={style.footer}>
-          <div className={`${style.footercont} ${style.flex}`}>
-            <div><a href="https://clck.ru/39xKFH" className={style.footertext}>Все права защищены Российской Ассоциацией Капибар</a></div>
+          <div className={`${style.footercont} ${style.flex} ${style.block}`}>
+            <div className={style.footertextmob}><a href="https://clck.ru/39xKFH" className={style.footertext}>Все права защищены Российской Ассоциацией Капибар</a></div>
             <div className={style.logowhite}><LogoWhite></LogoWhite></div>
           </div>
         </footer>
