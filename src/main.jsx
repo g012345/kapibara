@@ -45,7 +45,7 @@ const Main =()=> {
                 <LogoName></LogoName>
               </div>
               <div className={style.diagnostics}>
-                Современные методики диагностики
+                Современные методики диагностики1
               </div>
             </div>
             <div>
